@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="BitrixShopTestsSuite" verbose="1">
+
+
+	<parameter name="browser" value="firefox" />
+	<parameter name="item2" value="2" />
+	<parameter name="item3" value="3" />
+
+	<test name="ToolQA_cc">
+
+		<classes>
+			<class name="BitrixShopTests.Start" />
+
+			<class name="BitrixShopTests.AddManTsClearly" />
+			<class name="BitrixShopTests.AddWomanTsClearly" />
+			<class name="BitrixShopTests.AddWomanTsNight" />
+			<class name="BitrixShopTests.GetThreeProductsDataFromSite" />
+
+
+			<class name="BitrixShopTests.EditModel" />
+			<class name="BitrixShopTests.EditCart" />
+			<class name="BitrixShopTests.CheckSum2" />
+
+
+
+
+
+		</classes>
+	</test>
+
+
+</suite>

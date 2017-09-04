@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [BitrixShopTestsSuite]">
+  <parameter name="item2" value="2"/>
+  <parameter name="browser" value="firefox"/>
+  <parameter name="item3" value="3"/>
+  <test name="ToolQA_cc(failed)">
+    <classes>
+      <class name="BitrixShopTests.CheckSum2">
+        <methods>
+          <include name="compareSums"/>
+          <include name="testGetSumFromSite"/>
+          <include name="End"/>
+          <include name="start"/>
+        </methods>
+      </class> <!-- BitrixShopTests.CheckSum2 -->
+      <class name="BitrixShopTests.AddWomanTsClearly">
+        <methods>
+          <include name="start"/>
+        </methods>
+      </class> <!-- BitrixShopTests.AddWomanTsClearly -->
+      <class name="BitrixShopTests.Start">
+        <methods>
+          <include name="End"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- BitrixShopTests.Start -->
+      <class name="BitrixShopTests.EditCart">
+        <methods>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="testEditCart"/>
+        </methods>
+      </class> <!-- BitrixShopTests.EditCart -->
+      <class name="BitrixShopTests.GetThreeProductsDataFromSite">
+        <methods>
+          <include name="end"/>
+          <include name="start"/>
+        </methods>
+      </class> <!-- BitrixShopTests.GetThreeProductsDataFromSite -->
+      <class name="BitrixShopTests.EditModel">
+        <methods>
+          <include name="start"/>
+          <include name="End"/>
+        </methods>
+      </class> <!-- BitrixShopTests.EditModel -->
+      <class name="BitrixShopTests.AddWomanTsNight">
+        <methods>
+          <include name="start"/>
+        </methods>
+      </class> <!-- BitrixShopTests.AddWomanTsNight -->
+      <class name="BitrixShopTests.AddManTsClearly">
+        <methods>
+          <include name="start"/>
+        </methods>
+      </class> <!-- BitrixShopTests.AddManTsClearly -->
+    </classes>
+  </test> <!-- ToolQA_cc(failed) -->
+</suite> <!-- Failed suite [BitrixShopTestsSuite] -->

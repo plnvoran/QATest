@@ -1,0 +1,139 @@
+<html>
+<head>
+<title>TestNG:  ToolQA_cc</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>ToolQA_cc</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>12/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jul 20 16:38:20 MSK 2017</td>
+</tr>
+<tr><td>Total time:</td><td>9 seconds (9966 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='BitrixShopTests.GetThreeProductsDataFromSite.add1()'><b>add1</b><br>Test class: BitrixShopTests.GetThreeProductsDataFromSite<br>Parameters: ProductData [index=0, name=Футболка Мужская Чистота, price=799.0, num=1]</td>
+<td></td>
+<td>0</td>
+<td>BitrixShopTests.GetThreeProductsDataFromSite@5f341870</td></tr>
+<tr>
+<td title='BitrixShopTests.GetThreeProductsDataFromSite.add2()'><b>add2</b><br>Test class: BitrixShopTests.GetThreeProductsDataFromSite<br>Parameters: ProductData [index=0, name=Футболка Женская Чистота, price=749.0, num=3]</td>
+<td></td>
+<td>0</td>
+<td>BitrixShopTests.GetThreeProductsDataFromSite@5f341870</td></tr>
+<tr>
+<td title='BitrixShopTests.GetThreeProductsDataFromSite.add3()'><b>add3</b><br>Test class: BitrixShopTests.GetThreeProductsDataFromSite<br>Parameters: ProductData [index=0, name=Футболка Женская Ночь, price=759.0, num=2]</td>
+<td></td>
+<td>0</td>
+<td>BitrixShopTests.GetThreeProductsDataFromSite@5f341870</td></tr>
+<tr>
+<td title='BitrixShopTests.CheckSum2.compareSums()'><b>compareSums</b><br>Test class: BitrixShopTests.CheckSum2</td>
+<td></td>
+<td>0</td>
+<td>BitrixShopTests.CheckSum2@271053e1</td></tr>
+<tr>
+<td title='BitrixShopTests.CheckSum2.sumFromModel()'><b>sumFromModel</b><br>Test class: BitrixShopTests.CheckSum2<br>Parameters: [ProductData [index=0, name=Футболка Мужская Чистота, price=799.0, num=1], ProductData [index=0, name=Футболка Женская Чистота, price=749.0, num=3], ProductData [index=0, name=Футболка Женская Ночь, price=759.0, num=2]]</td>
+<td></td>
+<td>0</td>
+<td>BitrixShopTests.CheckSum2@271053e1</td></tr>
+<tr>
+<td title='BitrixShopTests.AddManTsClearly.testAddProduct()'><b>testAddProduct</b><br>Test class: BitrixShopTests.AddManTsClearly</td>
+<td></td>
+<td>0</td>
+<td>BitrixShopTests.AddManTsClearly@598067a5</td></tr>
+<tr>
+<td title='BitrixShopTests.AddWomanTsClearly.testAddProduct()'><b>testAddProduct</b><br>Test class: BitrixShopTests.AddWomanTsClearly</td>
+<td></td>
+<td>0</td>
+<td>BitrixShopTests.AddWomanTsClearly@3c0ecd4b</td></tr>
+<tr>
+<td title='BitrixShopTests.AddWomanTsNight.testAddProduct()'><b>testAddProduct</b><br>Test class: BitrixShopTests.AddWomanTsNight</td>
+<td></td>
+<td>0</td>
+<td>BitrixShopTests.AddWomanTsNight@14bf9759</td></tr>
+<tr>
+<td title='BitrixShopTests.EditCart.testEditCart()'><b>testEditCart</b><br>Test class: BitrixShopTests.EditCart<br>Parameters: 2, 3</td>
+<td></td>
+<td>3</td>
+<td>BitrixShopTests.EditCart@4f7d0008</td></tr>
+<tr>
+<td title='BitrixShopTests.EditModel.testEditModel()'><b>testEditModel</b><br>Test class: BitrixShopTests.EditModel<br>Parameters: [ProductData [index=0, name=Футболка Мужская Чистота, price=799.0, num=1], ProductData [index=0, name=Футболка Женская Чистота, price=749.0, num=3], ProductData [index=0, name=Футболка Женская Ночь, price=759.0, num=2]]</td>
+<td></td>
+<td>0</td>
+<td>BitrixShopTests.EditModel@553f17c</td></tr>
+<tr>
+<td title='BitrixShopTests.CheckSum2.testGetSumFromSite()'><b>testGetSumFromSite</b><br>Test class: BitrixShopTests.CheckSum2</td>
+<td></td>
+<td>0</td>
+<td>BitrixShopTests.CheckSum2@271053e1</td></tr>
+<tr>
+<td title='BitrixShopTests.Start.testStart()'><b>testStart</b><br>Test class: BitrixShopTests.Start</td>
+<td></td>
+<td>3</td>
+<td>BitrixShopTests.Start@31ef45e3</td></tr>
+</table><p>
+</body>
+</html>
