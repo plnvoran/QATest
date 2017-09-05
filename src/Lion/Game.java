@@ -20,7 +20,7 @@ public class Game {
 		parts.messageForStart();
 		lion=parts.setStartState(sc);
 		
-		for (int i=0; i<100; i++)
+		for (int i=0; i<5; i++)
 		{
 		
 		parts.messageForInputOutside();

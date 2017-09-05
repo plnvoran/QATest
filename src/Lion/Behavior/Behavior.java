@@ -19,7 +19,7 @@ public class Behavior {
 			} else if (lion.getState().equals("s")) {
 				output.setAction("Run");
 				lion.setStatePrevious("s");
-				lion.setState("Hungry");
+				lion.setState("h");
 			}
 
 		} else if (input.equals("a")) {
@@ -29,7 +29,7 @@ public class Behavior {
 				lion.setState("s");
 			} else if (lion.getState().equals("s")) {
 				output.setAction("Sleep");
-				lion.setStatePrevious("Satisfied");
+				lion.setStatePrevious("s");
 				lion.setState("h");
 			}
 		}
