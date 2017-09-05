@@ -15,12 +15,12 @@ public class Game {
 		Outside outside;
 		Lion lion;
 		Behavior behavior = new Behavior();
-		Scanner sc = new Scanner(System.in); // создаём объект класса Scanner
+		Scanner sc = new Scanner(System.in); 
 
 		parts.messageForStart();
 		lion=parts.setStartState(sc);
 		
-		for (int i=0; i<10; i++)
+		for (int i=0; i<20; i++)
 		{
 		
 		parts.messageForInputOutside();
