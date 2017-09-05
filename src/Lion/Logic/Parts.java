@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import Lion.Behavior.Behavior;
 import Lion.Data.Lion;
-import Lion.Data.Outside;
+import Lion.Data.Output;
 
 public class Parts {
 	
@@ -30,17 +30,20 @@ public class Parts {
 		System.out.println("Antilope - press a, Hanter: - press h:");
 	}
 	
-	public static Outside setOutside(Scanner sc) {
+	public String getInput(Scanner sc) {
 		String line = "";	
-		
-		Outside outside = new Outside();
-
 		line = sc.nextLine();
-
-		outside.setTarget(line);
-		
-		return outside;
+		return line;
 		
 	}
 	
+	public void print(Output output, Lion lion) {
+		
+		System.out.println("Lion's action is:");
+		System.out.println(output.getAction());
+		System.out.println(output.getMsg());
+		System.out.println(lion.getState());
+						
+		
+	}
 }

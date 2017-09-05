@@ -1,48 +1,47 @@
 package Lion.Behavior;
 
 import Lion.Data.Lion;
-import Lion.Data.Outside;
+import Lion.Data.Output;
+
 
 public class Behavior {
 
-	public void behavior(Outside outside, Lion lion) {
-		String action = "";
+	public Output behavior(String input, Lion lion) {
+		
+		Output output=new Output();	
+	
+		if (input.equals("h")) {
 
-		if (outside.getTarget().equals("h")) {
-
-			if (lion.getState().equals("Hungry")) {
-				action = "Run";
-				lion.setStatePrevious("Hungry");
-				lion.setState("Hungry");
-			} else if (lion.getState().equals("Satisfied")) {
-				action = "Run";
-				lion.setStatePrevious("Satisfied");
+			if (lion.getState().equals("h")) {
+				output.setAction("Run");
+				lion.setStatePrevious("h");
+				lion.setState("h");
+			} else if (lion.getState().equals("s")) {
+				output.setAction("Run");
+				lion.setStatePrevious("s");
 				lion.setState("Hungry");
 			}
 
-		} else if (outside.getTarget().equals("a")) {
-			if (lion.getState().equals("Hungry")) {
-				action = "Eat";
-				lion.setStatePrevious("Hungry");
-				lion.setState("Satisfied");
-			} else if (lion.getState().equals("Satisfied")) {
-				action = "Sleep";
+		} else if (input.equals("a")) {
+			if (lion.getState().equals("h")) {
+				output.setAction("Eat");
+				lion.setStatePrevious("h");
+				lion.setState("s");
+			} else if (lion.getState().equals("s")) {
+				output.setAction("Sleep");
 				lion.setStatePrevious("Satisfied");
-				lion.setState("Hungry");
+				lion.setState("h");
 			}
 		}
 		
-		System.out.println("Lion action:");
-		System.out.println(action);
 
 		if (lion.getState().equals(lion.getStatePrevious())) {
-			System.out.println("Lion state has not been changed and now is:");
+			output.setMsg("Lion state has not been changed and now is:");
 		} else {
-			System.out.println("Lion state has been changed to:");
+			output.setMsg("Lion state has been changed to:");
 		}
 
-		System.out.println(lion.getState());
-
+		return output;
 	}
 
 }

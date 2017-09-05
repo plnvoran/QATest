@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import Lion.Behavior.Behavior;
 import Lion.Data.Lion;
-import Lion.Data.Outside;
+import Lion.Data.Output;
 import Lion.Logic.Parts;
 
 public class Game {
@@ -12,7 +12,7 @@ public class Game {
 	public static void main(String[] args) {
 		Parts parts = new Parts ();
 		String line = "";
-		Outside outside;
+	
 		Lion lion;
 		Behavior behavior = new Behavior();
 		Scanner sc = new Scanner(System.in); 
@@ -24,8 +24,10 @@ public class Game {
 		{
 		
 		parts.messageForInputOutside();
-		outside=parts.setOutside(sc);
-		behavior.behavior(outside, lion);
+		String input = parts.getInput(sc);
+		Output output = behavior.behavior(input, lion);
+		
+		parts.print(output, lion);
 		
 		}
 	}
