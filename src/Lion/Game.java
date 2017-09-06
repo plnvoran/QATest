@@ -9,9 +9,8 @@ import Lion.Logic.Parts;
 public class Game {
 
 	public static void main(String[] args) {
+		
 		Parts parts = new Parts ();
-		String line = "";
-	
 		Lion lion;
 		Behavior behavior = new Behavior();
 		Scanner sc = new Scanner(System.in); 
@@ -22,9 +21,9 @@ public class Game {
 		for (int i=0; i<5; i++)
 		{
 		
-		parts.messageForInputOutside();
+		parts.messageForGetInput(5-i);
 		String input = parts.getInput(sc);				
-		parts.print(behavior.behavior(input, lion));
+		parts.printResults(behavior.behavior(input, lion));
 		
 		}
 	}

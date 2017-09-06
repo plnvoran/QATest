@@ -25,9 +25,10 @@ public class Parts {
 		
 	}
 	
-	public void messageForInputOutside() {
-	
-		System.out.println("Antilope - press a, Hanter: - press h:");
+	public void messageForGetInput(int i) {
+		System.out.println("You have "+i+" time(s) for playing");
+		System.out.println("Set what is happenning in the jungle, hanter is coming or antilope is running.");
+		System.out.println("For Antilope - press a, for Hanter: - press h:");
 	}
 	
 	public String getInput(Scanner sc) {
@@ -37,13 +38,12 @@ public class Parts {
 		
 	}
 	
-	public void print(Lion lion) {
+	public void printResults(Lion lion) {
 		
 		System.out.println("Lion's action is:");
 		System.out.println(lion.getAction());
 		System.out.println(lion.getMsg());
 		System.out.println(lion.getState());
-						
-		
+					
 	}
 }
