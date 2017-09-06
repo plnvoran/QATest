@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import Lion.Behavior.Behavior;
 import Lion.Data.Lion;
-import Lion.Data.Output;
+
 
 public class Parts {
 	
@@ -37,11 +37,11 @@ public class Parts {
 		
 	}
 	
-	public void print(Output output, Lion lion) {
+	public void print(Lion lion) {
 		
 		System.out.println("Lion's action is:");
-		System.out.println(output.getAction());
-		System.out.println(output.getMsg());
+		System.out.println(lion.getAction());
+		System.out.println(lion.getMsg());
 		System.out.println(lion.getState());
 						
 		
