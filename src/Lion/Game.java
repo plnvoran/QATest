@@ -11,20 +11,21 @@ public class Game {
 	public static void main(String[] args) {
 		
 		Parts parts = new Parts ();
-		Lion lion;
+		Lion lion=new Lion();
 		Behavior behavior = new Behavior();
 		Scanner sc = new Scanner(System.in); 
 
 		parts.messageForStart();
-		lion=parts.setStartState(sc);
+		lion.setState(parts.setStartState(sc));
 		
-		for (int i=0; i<5; i++)
+		for (int i=5; i>0; i--)
 		{
 		
-		parts.messageForGetInput(5-i);
-		String input = parts.getInput(sc);				
-		parts.printResults(behavior.behavior(input, lion));
+		parts.messageForGetInput(i);					
+		
+		parts.printResults(behavior.behavior(parts.getInput(sc), lion));
 		
 		}
+		parts.end();
 	}
 }
