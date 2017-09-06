@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20" started-at="2017-09-06T08:15:23Z" finished-at="2017-09-06T08:15:23Z">
+  <suite name="Default suite" duration-ms="19" started-at="2017-09-06T08:58:45Z" finished-at="2017-09-06T08:58:45Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20" started-at="2017-09-06T08:15:23Z" finished-at="2017-09-06T08:15:23Z">
-      <class name="Lion.Test.BehaviorTest">
-        <test-method status="PASS" signature="startFromHungry()[pri:0, instance:Lion.Test.BehaviorTest@3532ec19]" name="startFromHungry" duration-ms="9" started-at="2017-09-06T11:15:23Z" finished-at="2017-09-06T11:15:23Z">
+    <test name="Default test" duration-ms="19" started-at="2017-09-06T08:58:45Z" finished-at="2017-09-06T08:58:45Z">
+      <class name="Lion.Test.TestGraphOne">
+        <test-method status="PASS" signature="startFromHungry()[pri:0, instance:Lion.Test.TestGraphOne@3532ec19]" name="startFromHungry" duration-ms="9" started-at="2017-09-06T11:58:45Z" finished-at="2017-09-06T11:58:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startFromHungry -->
-      </class> <!-- Lion.Test.BehaviorTest -->
+      </class> <!-- Lion.Test.TestGraphOne -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

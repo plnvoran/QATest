@@ -6,9 +6,9 @@ import org.testng.annotations.Test;
 import Lion.Behavior.Behavior;
 import Lion.Data.Lion;
 
-public class BehaviorTest {
-	@Test
-	public void startFromHungry() {
+public class TestGraphOne {
+  @Test
+  public void startFromHungry() {
 
 		Behavior b = new 	Behavior ();
 		Lion l = new Lion().withState("h");	
