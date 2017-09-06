@@ -24,10 +24,12 @@ public class Game {
 		{
 		
 		parts.messageForInputOutside();
-		String input = parts.getInput(sc);
-		Output output = behavior.behavior(input, lion);
 		
-		parts.print(output, lion);
+		String input = parts.getInput(sc);
+		
+		
+		
+		parts.print(behavior.behavior(input, lion), lion);
 		
 		}
 	}
